@@ -1,0 +1,17 @@
+#include<iostream>
+int n;
+void func(int a)
+{
+    if(a >= 9){
+        func(a / 10);
+        std::cout<<a%10<<"\n";
+    }
+    else
+      std::cout<<a<<"\n";
+}
+int main()
+{
+    std::cin>>n;
+    func(n);
+    return 0;
+}
